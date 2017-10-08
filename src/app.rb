@@ -27,11 +27,21 @@ for i in 0...accounts.size
         nodej = data[j].split(" ")[0]
         name_j1 = data[j].split(" ")[1]
         name_j2 = data[j].split(" ")[2]
-        
-        if(name_i1 == name_j1 || name_i1 == name_j2 || name_i2 == name_j1 || name_i2 == name_j2)
+ 
+        if(name_i1 == name_j1)
             puts "Adding edges to nodes:  #{nodei} -- #{nodej}"
-            graph.add_edges( nodei.to_s, nodej.to_s )
+            graph.add_edges( nodei.to_s, nodej.to_s, :label => "#{name_i1}" )
+        elsif(name_i1 == name_j2)
+            puts "Adding edges to nodes:  #{nodei} -- #{nodej}"
+            graph.add_edges( nodei.to_s, nodej.to_s, :label => "#{name_i1}" )
+        elsif(name_i2 == name_j1)
+            puts "Adding edges to nodes:  #{nodei} -- #{nodej}"
+            graph.add_edges( nodei.to_s, nodej.to_s, :label => "#{name_i2}" )
+        elsif(name_i2 == name_j2)
+            puts "Adding edges to nodes:  #{nodei} -- #{nodej}"
+            graph.add_edges( nodei.to_s, nodej.to_s, :label => "#{name_i2}" )
         end
+
     end
 end
 
