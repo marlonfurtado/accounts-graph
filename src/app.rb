@@ -1,9 +1,10 @@
 require 'graphviz'
 require_relative 'reader'
 
-file = ARGV[0]
+file = ARGV[0] || "caso00"
 reader = Reader.new file
 data = reader.data
+puts "Running '#{file}'..."
 
 data.shift  # Remove first
 data.pop  # Remove last
