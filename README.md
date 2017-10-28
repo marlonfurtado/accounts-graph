@@ -26,5 +26,5 @@ Vitor Aline
 
 A imagem gerada: 
 
-![Grafo gerado a partir do caso00](https://raw.githubusercontent.com/marlonfurtado/ruby-graph/master/img/caso00.png?token=AT5Y0hhXXBzYHRDknlrY81P71EM8SlTXks5Z8iZPwA%3D%3D)
+![Grafo gerado a partir do caso00](https://i.imgur.com/wBNkMZ8.png)
   
